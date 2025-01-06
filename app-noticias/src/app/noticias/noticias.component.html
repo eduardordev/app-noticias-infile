@@ -1,0 +1,14 @@
+<section>
+  <header class="noticias-header">
+    <h1 class="content-title">Enterate de las últimas noticias de la semana</h1>
+  </header>
+</section>
+
+<section class="cards-container">
+  <section class="results">
+    <app-tarjeta-noticia
+      *ngFor="let noticia of noticiasList"
+      [noticia]="noticia"
+    ></app-tarjeta-noticia>
+  </section>
+</section>

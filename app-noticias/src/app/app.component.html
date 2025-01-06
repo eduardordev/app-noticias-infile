@@ -1,0 +1,20 @@
+<main>
+  <header class="app-header">
+    <img class="logo" src="../../news.png" alt="logo" />
+    <a class="noticias-title">NotiExpress</a>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li>
+          <a [routerLink]="['/']">Inicio</a>
+        </li>
+        <li>
+          <a [routerLink]="['/categorias']">Categorías</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</main>

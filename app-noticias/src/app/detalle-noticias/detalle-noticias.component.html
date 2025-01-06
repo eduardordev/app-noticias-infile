@@ -1,0 +1,22 @@
+<div class="contenedor-noticia">
+  <button (click)="goBack()" class="boton-volver">Volver</button>
+  <div class="noticia-detalle">
+    <section class="contenido-noticia">
+      <h1 class="titulo-noticia">{{noticia?.title}}</h1>
+      <img [src]="'data:image/jpeg;base64,' + (noticia?.image || '')" alt="Imagen de la noticia" />
+      <p class="fecha-publicacion">Publicada el: {{noticia?.date}}</p>
+      <p class="descripcion-noticia">{{noticia?.description}}</p>
+      <p class="cuerpo-noticia">{{noticia?.body}}</p>
+    </section>
+  </div>
+
+  <div class="noticias-recomendadas">
+    <h2>Noticias Recomendadas</h2>
+    <section class="results">
+      <app-noticias-recomendadas
+        *ngFor="let noticia of noticiasRecomendadas"
+        [noticia]="noticia"
+      ></app-noticias-recomendadas>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.example-card {
+  max-width: 400px;
+  margin-bottom: 5vh;
+  border: none;
+}
+
+.imagen-noticia {
+  background-size: cover;
+  max-height: 80%;  /* Ajusta este valor según lo que consideres adecuado */
+  height: auto;
+  aspect-ratio: 16/9;
+}
+

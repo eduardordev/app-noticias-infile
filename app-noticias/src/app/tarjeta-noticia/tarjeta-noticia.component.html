@@ -1,0 +1,12 @@
+<mat-card class="example-card" appearance="outlined">
+  <img [src]="'data:image/jpeg;base64,' + (noticia.image || '')" alt="Imagen de la noticia" />
+  <mat-card-content>
+    <mat-card-title>{{noticia.title}}</mat-card-title>
+    <p>
+      {{noticia.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button [routerLink]="['/details', noticia.id]">Leer Más</button>
+  </mat-card-actions>
+</mat-card>
